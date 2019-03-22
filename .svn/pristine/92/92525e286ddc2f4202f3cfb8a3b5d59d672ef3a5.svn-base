@@ -1,0 +1,811 @@
+<template>
+    <div class="wrapper" ref='wrapper'>
+        <main class="container">
+            <section class="intro-one">
+                <div class="logo">
+                    <img class="logo__icon" src="../../../assets/images/introduce/logo-200-240.png" >
+                    <span class="logo__text">让分享更有价值</span>
+                </div>
+                <div class="desc">
+                    <span>满金店是新型的分享式购物平台，人人均可在平台上免费开店获取收益。只需将商品一键分享至朋友圈，好友下单后您可获取商品收益。</span>
+                </div>
+                <div class="ft">
+                    <p class="ft__slogan">分享挣钱，自购省钱！</p>
+                    <div class="ft__btn" ref="topBtn">{{ btnTxt }}</div>
+                    <p class="ft__markup">限时免费</p>
+                </div>
+            </section>
+            <section class="intro-two openshop">
+                <div class="intro__tit">
+                    <p class="it--big">零压力开店</p>
+                    <p class="it--small"><em>无需</em>资金、囤货，<em>无需</em>处理订单</p>
+                </div>
+                <div class="intro__advantage">
+                    <div class="advantage-item">
+                        <p class="advantage-tit">海量商品</p>
+                        <p class="advantage-desc">平台汇集海量一线品牌商品，所有商品均由商家提供，100%正品保障！</p>
+                    </div>
+                    <div class="advantage-item">
+                        <p class="advantage-tit">免邮代发</p>
+                        <p class="advantage-desc">客户购买一件商品就免邮代发，不占用您个 人时间。</p>
+                    </div>
+                    <div class="advantage-item">
+                        <p class="advantage-tit">七天无理由退货</p>
+                        <p class="advantage-desc">平台支持七天无理由退货，平台商家承担产 品售后店主轻松开店放心经营。</p>
+                    </div>
+                </div>
+            </section>
+            <section class="intro-three makemoney">
+                <div class="intro__tit">
+                    <p class="it--big">如何轻松赚钱</p>
+                </div>
+                <div class="intro__makemoney">
+                    <div class="makemoney-item">
+                        <div class="mi-icon">
+                            <img src="../../../assets/images/introduce/makemoney-1.png">
+                        </div>
+                        <p class="mi-tit">一键开店</p>
+                        <p class="mi-desc">0门槛，0押金，0库存，注册并登录满金店app就成功开店！</p>
+                    </div>
+                    <div class="makemoney-item">
+                        <div class="mi-icon">
+                            <img src="../../../assets/images/introduce/makemoney-2.png">
+                        </div>
+                        <p class="mi-tit">一线品牌</p>
+                        <p class="mi-desc">平台汇聚海量一线品牌商品，100%正品保障！</p>
+                    </div>
+                    <div class="makemoney-item">
+                        <div class="mi-icon">
+                            <img src="../../../assets/images/introduce/makemoney-3.png">
+                        </div>
+                        <p class="mi-tit">一键推广</p>
+                        <p class="mi-desc">商品分享至微信、微博、QQ等渠道，好友下单后就能获取收益。</p>
+                    </div>
+                    <div class="makemoney-item">
+                        <div class="mi-icon">
+                            <img src="../../../assets/images/introduce/makemoney-4.png">
+                        </div>
+                        <p class="mi-tit">一键提现</p>
+                        <p class="mi-desc">订单完成，收益到账。可用收益满100元，就可提现到账。</p>
+                    </div>
+                </div>
+            </section>
+            <section class="intro-four profit">
+                <div class="intro__tit">
+                    <p class="it--big">如何躺着拿收益</p>
+                </div>
+                <div class="intro__profit">
+                    <div class="profit-item">
+                        <div class="pi-tit">方式一</div>
+                        <ul class="pi-list">
+                            <li class="pi-item love">
+                                <img src="../../../assets/images/introduce/icon-love.png">
+                                <span>看到喜欢的商品</span>
+                            </li>
+                            <li class="pi-item share">
+                                <img src="../../../assets/images/introduce/icon-share.png">
+                                <span>转发分享</span>
+                            </li>
+                            <li class="pi-item buy">
+                                <img src="../../../assets/images/introduce/icon-buy.png">
+                                <span>客户购买商品</span>
+                            </li>
+                            <li class="pi-item finish">
+                                <img src="../../../assets/images/introduce/icon-finish.png">
+                                <span>订单完成获得收益</span>
+                            </li>
+                        </ul>
+                    </div>
+                     <div class="profit-item">
+                        <div class="pi-tit">方式二</div>
+                        <ul class="pi-list">
+                            <li class="pi-item link">
+                                <img src="../../../assets/images/introduce/icon-link.png">
+                                <span>分享邀请开店的链接给好友</span>
+                            </li>
+                            <li class="pi-item register">
+                                <img src="../../../assets/images/introduce/icon-register.png">
+                                <span>好友通过链接注册app</span>
+                            </li>
+                            <li class="pi-item sell">
+                                <img src="../../../assets/images/introduce/icon-sell.png">
+                                <span>朋友的店铺卖出商品</span>
+                            </li>
+                            <li class="pi-item profit">
+                                <img src="../../../assets/images/introduce/icon-profit.png">
+                                <span>订单完成平台奖励你10%好友店铺收益</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="intro-five moneying">
+                <div class="intro__tit">
+                    <p class="it--big">他们都在满金店赚钱</p>
+                </div>
+                <div class="intro__swiper">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div  class="swiper-slide">
+                                <div class="card">
+                                    <img src="../../../assets/images/introduce/person-1.png" class="card-avatar">
+                                    <p class="card-shopname">明明的小店</p>
+                                    <p class="card-money">月入<em>¥2100</em></p>
+                                    <p class="card-other">
+                                        <span>白领</span>
+                                        <span>天津</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div  class="swiper-slide">
+                                <div class="card">
+                                    <img src="../../../assets/images/introduce/person-2.png" class="card-avatar">
+                                    <p class="card-shopname">大白专营店</p>
+                                    <p class="card-money">月入<em>¥3700</em></p>
+                                    <p class="card-other">
+                                        <span>国企</span>
+                                        <span>昆明</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div  class="swiper-slide">
+                                <div class="card">
+                                    <img src="../../../assets/images/introduce/person-3.png" class="card-avatar">
+                                    <p class="card-shopname">宝贝倾心店</p>
+                                    <p class="card-money">月入<em>¥2200</em></p>
+                                    <p class="card-other">
+                                        <span>宝马</span>
+                                        <span>天津</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="intro-last last">
+                <div class="app-img">
+                    <img src="../../../assets/images/introduce/bg-3.png">
+                </div>
+               
+                <div class="app-welcome">
+                    <div class="app-logo">
+                        <img src="../../../assets/images/introduce/logo-140-165.png">
+                    </div>
+                    <div class="app-slogan">满金店欢迎你加入！</div>
+                    <p class="app-desc">现在成为满金店店主，即可获得满金店为您提供的专业经验培训和贴心的客服服务哟～</p>
+                    <p class="app-desc">邀请您的朋友一起开店，还可以增加收益哦～</p>
+                    <div class="btn-openshop" ref="btmBtn">{{ isLogined ? '邀请朋友开店' : '立即开店'}}</div>
+                </div>
+            </section>
+        </main>
+        <div class="float-footer" v-show="isShowFooter">
+            <div class="ff-lf">{{ isLogined ? '邀请好友一起开店赚钱吧' : '诚邀您加入满金店大家庭'}}</div>
+            <div class="ff-rt">{{isLogined ? '邀请开店' : '立即开店'}}</div>
+        </div>
+        <transition name="bullet"  @after-enter="afterEnter" @after-leave="afterLeave">
+            <div v-show="isShowBullet" class="bullet-screen">
+                <span>{{bulletList[0]}}</span>
+            </div>
+        </transition>
+    </div>
+</template>
+
+<script>
+    import { getQueryParam, throttle } from '@/utils/common';
+    import { fetch } from '@/utils/fetch';
+    import Swiper from 'swiper/dist/js/swiper.min';
+    import '@/assets/styles/swiper.css';
+    import '@/assets/styles/common';
+    
+    export default {
+        data(){
+            return {
+                isLogined: !0,
+                isShowFooter: !1,
+                shareData: {
+                    title: '这里有一个躺着赚钱的秘籍',
+                    desc: '0元开店，甩手掌柜，分享就能赚钱，每天都有现金进账~',
+                    url: ''
+                },
+                isShowBullet: !1,
+                bulletInterval: 1,
+                bulletList: [],
+                timer: null,
+                afterTimer: null
+            }
+        },
+        methods: {
+            afterEnter(){
+                this.afterTimer = setTimeout(() => {
+                    this.isShowBullet = !1;
+                }, 1000);
+            },
+            afterLeave(){
+                this.bulletList.shift();
+                if(this.bulletList.length<=0 || this.paused){
+                    return;
+                }
+                this.showBullet();
+            },
+            showBullet(){
+                if(this.timer){
+                    clearTimeout(this.timer);
+                }
+                this.timer = setTimeout(() => {
+                    this.isShowBullet = !0;
+                }, this.bulletInterval * 1000);
+            },
+            pullBulletData(){
+                fetch(`/message/m/index`).then(res => {
+                    if(res.code !== 1){
+                        return;
+                    }
+                    this.bulletList = res.data.msglist;
+                    this.bulletInterval = res.data.frequency;
+                    if (this.bulletList.length > 0) {
+                        this.showBullet();
+                    }
+                }).catch(err => {
+                    console.log(err);
+                });
+            },
+            initSwiper(){
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 'auto',
+                    spaceBetween: 30,
+                    centeredSlides: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: !1,
+                    },
+                    loop: !0,
+                    loopedSlides: 3
+                });
+            },
+            initScrollHandle(){
+                let topBtnPos = this.$refs.topBtn.getBoundingClientRect();
+                let btmBtnPos = this.$refs.btmBtn.getBoundingClientRect();
+               
+                let minH = topBtnPos.bottom + window.pageYOffset; 
+              
+                document.addEventListener('scroll', throttle(() => {
+                    let scrollY = window.pageYOffset;
+                    let maxH = getOffsetTop(this.$refs.btmBtn) - window.innerHeight; 
+                    if( scrollY > minH && scrollY < maxH){
+                        this.isShowFooter = !0;
+                    }else{
+                        this.isShowFooter = !1;
+                    }
+                }, 100, 200), !1);
+
+                function getOffsetTop(el) {
+                    return el.offsetParent ?
+                        el.offsetTop + getOffsetTop(el.offsetParent) :
+                        el.offsetTop
+                }
+            },
+            init(){
+                this.initSwiper();
+                this.initScrollHandle();
+                this.pullBulletData();
+            }
+        },
+        computed: {
+            btnTxt(){
+                return this.isLogined ? '邀请朋友开店' : '我要开店';
+            }
+        },
+        mounted(){
+            const qs = getQueryParam(location.search);
+            this.isLogined = qs('isLogin') > 0;
+            this.init();
+        }
+    }
+</script>
+<style>
+    .swiper-container-horizontal > .swiper-pagination-bullets{
+        bottom: 0;
+        font-size: 0;
+        line-height: 0;
+    }
+    .swiper-pagination-bullet{
+        width: 0.32rem;
+        height: 0.06rem;
+        background-color: #656565;
+        border-radius: 0;
+    }
+</style>
+<style scoped>
+    @import '../../../assets/styles/mixins.css';
+
+    .wrapper{
+       /* max-width: 640px;
+        min-width: 320px;
+        margin: 0 auto;*/
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .intro__swiper{
+        height: 3.8rem;
+        background-color: #f9f9f9;
+    }
+
+    .swiper-container{
+        height: 100%;
+        padding-bottom: .4rem;
+    }
+
+    .swiper-wrapper{
+        display: flex;
+        align-items: center;
+    }
+    
+    .swiper-slide{
+        width: 2.8rem;
+        height: 3.2rem;
+        border-radius: 2px;
+        background-color: #fff;
+        box-shadow:2px 2px 13px 2px rgba(208,203,198,0.5);
+    }
+
+    .intro__tit{
+        text-align: center;
+        .it--big{
+            line-height: 0.59rem;
+            color: #333;
+            font-size: 0.42rem;
+        }  
+
+        .it--small{
+            margin-top: 0.1rem;
+            font-size: 0.26rem;
+            color: #696969;
+            em{
+                font-style: normal;
+                color: #333;
+            }
+        } 
+    }
+    
+    .intro-one{
+        height: 10.46rem;
+        padding-top: 1.97rem;
+        background: url(../../../assets/images/introduce/bg-1.png) center 0/ contain no-repeat;
+        box-sizing: border-box;
+        
+        .logo{
+           
+            .logo__icon{
+                display: block;
+                width: 2.0rem;
+                height: 2.4rem;
+                margin: 0 auto 0.45rem;
+            }
+
+            .logo__text{
+                display: block;
+                width: 2.8rem;
+                height: 0.48rem;
+                line-height: 0.48rem;
+                border: 1px solid #ccc;
+                border-radius: 2px;
+                color: #909090;
+                font-size: 0.28rem;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+
+        .desc{
+            margin: 0.9rem 0.8rem 0;
+            line-height: 0.48rem;
+            font-size: 0.28rem;
+            color: #696969;
+        }
+        
+        .ft{
+            margin-top: 1.09rem;
+            text-align: center;
+            
+            .ft__slogan{
+                line-height: 0.53rem;
+                color: #333;
+                font-size: 0.38rem;
+            }
+            
+            .ft__btn{
+                width:5.0rem;
+                height:0.98rem;
+                line-height: 0.98rem;
+                border-radius:4px;
+                margin: 0.3rem auto 0.16rem;
+                font-size: 0.34rem;
+                color: #fff;
+                background:linear-gradient(90deg,rgba(255,140,0,1),rgba(255,101,43,1));
+                box-shadow:1px 2px 13px 0px rgba(255,145,82,0.5);
+            }
+
+            .ft__markup{
+                line-height: 0.33rem;
+                color: #9F9F9F;
+                font-size: 0.24rem;
+            }
+        }
+    }
+    
+    .intro-two{
+        margin-top: 2.0rem;
+        .intro__advantage{
+            margin-top: 0.22rem;
+        }
+        .advantage-item{
+            height: 2.56rem;
+            margin: 0 0.09rem 0 0.26rem;
+            padding: 0.54rem 1.15rem 0 1.02rem;
+            background-position: 0 0;
+            background-size: contain;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+
+            .advantage-tit{
+                font-size: 0.36rem;
+                color: #333;
+            }
+
+            .advantage-desc{
+                margin-top: 0.37rem; 
+                line-height: 0.37rem;
+                color: #696969;
+                font-size: 0.26rem;
+            }
+
+            &:nth-of-type(1){
+                background-image: url(../../../assets/images/introduce/advantage-1.png);
+            }
+
+            &:nth-of-type(2){
+                padding-right: 1.02rem;
+                padding-left: 1.15rem;
+                background-image: url(../../../assets/images/introduce/advantage-2.png);
+
+                .advantage-tit{
+                    text-align: right;
+                }
+            }
+
+            &:nth-of-type(3){
+                background-image: url(../../../assets/images/introduce/advantage-3.png);
+            }
+        }
+    }
+
+    .intro-three{
+        height: 12.05rem;
+        margin-top: 0.53rem;
+        background: url(../../../assets/images/introduce/bg-2.png) center center/ contain no-repeat;
+
+        .it--big{
+            padding: 1.05rem 0;
+            color: #fff;
+        }
+
+        .intro__makemoney{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+
+            &:before, &:after{
+                content: '';
+                position: absolute;
+                background-color: transparent;
+            }
+
+            &:before{
+                height: 1px;
+                left: 0.7rem;
+                right: 0.7rem;
+                top: 50%;
+                margin-top: -1px;
+                border-top: 1px dashed #6F6966;
+            }
+
+            &:after{
+                width: 1px;
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                margin-left: -1px;
+                border-left: 1px dashed #6F6966;
+            }
+        }
+
+        .makemoney-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            padding-bottom: 0.7rem;
+            .mi-icon{
+                width: 1.0rem;
+                height: 1.0rem;
+                overflow: hidden;
+
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .mi-tit{
+                margin-top: 0.3rem;
+                margin-bottom: 0.2rem;
+                line-height: 0.5rem;
+                color: #f0f0f0;
+                font-size: 0.36rem;
+            }
+
+            .mi-desc{
+                width: 2.4rem;
+                line-height: 0.37rem;
+                color: #D9C28F;
+                font-size: 0.26rem;
+                text-align: center;
+            }
+            
+            &:nth-of-type(n+3):nth-of-type(-n+4){
+                padding-bottom: 0;
+                padding-top: 0.7rem;
+            }
+
+        }
+    }
+
+    .intro-four{
+        margin-top: 0.88rem;
+
+        .it--big{
+            color: #000;
+        }
+        
+        .pi-tit{
+            width: 1.4rem;
+            height: 0.44rem;
+            line-height: 0.44rem;
+            margin: 0.4rem auto 0.44rem;
+            border: 1px solid #b0b0b0;
+            text-align: center;
+            font-size: 0.28rem;
+            color: #333;
+        }
+
+        .profit-item:first-of-type .pi-tit{
+            margin-top: 0.5rem;
+        }
+
+        .pi-list{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 0.5rem;
+        }
+
+        .pi-item{
+            position: relative;
+            width: 1.32rem;
+            
+            &:not(:first-of-type):before{
+                content:'';
+                position: absolute;
+                top: 0.48rem;
+                left: -0.28rem;
+                width: 7px;
+                height: 7px;
+                background: url(../../../assets/images/introduce/arrow.png) 0 0/contain no-repeat;
+            }
+
+            img{
+                display: block;
+                width: 1.1rem;
+                height: 1.1rem;
+                margin: 0 auto;
+            }
+
+            span{
+                display: block;
+                color: #666;
+                line-height: 0.3rem;
+                font-size: 0.22rem;
+                margin-top: 0.12rem;
+                text-align: center;
+            }
+        }
+    }
+
+    .intro-five{
+        margin-top: 1.0rem;
+        padding-bottom: 1.0rem;
+        .it--big{
+            color: #000;
+        }
+
+        .intro__swiper{
+            margin-top: 0.42rem;
+        }
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                display: block;
+                width: 0.8rem;
+                height: 0.8rem;
+                margin-bottom: 0.3rem;
+                margin-top: 0.38rem;
+            }
+            
+            .card-shopname{
+                line-height: 0.33rem;
+                color: #333;
+                font-size: 0.24rem;
+            }
+            
+            .card-money{
+                line-height: 0.45rem;
+                margin-top: 0.1rem;
+                margin-bottom: 0.16rem;
+                color: #000;
+                font-size: 0.32rem;
+                em{
+                    color: #EE3826;
+                }
+            }
+
+            .card-other{
+                line-height: 0.3rem;
+                color: #7f7f7f;
+                font-size: 0.22rem;
+            }
+        }
+    }
+
+    .intro-last{
+        position: relative;
+        padding-bottom: 2.12rem;
+        .app-img{
+            img{
+                display: block;
+                width: 5.48rem;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+
+        .btn-openshop{
+            width:5.0rem;
+            height:0.98rem;
+            line-height: 0.98rem;
+            border-radius:4px;
+            margin: 0.62rem auto 0.6rem;
+            text-align: center;
+            font-size: 0.34rem;
+            color: #fff;
+            background:linear-gradient(90deg,rgba(255,140,0,1),rgba(255,101,43,1));
+            box-shadow:1px 2px 13px 0 rgba(255,145,82,0.5);
+        }
+        
+        .app-welcome{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            width: 100%;
+            height: 8.85rem;
+            padding-top: 1.3rem;
+            box-sizing: border-box;
+            background: url(../../../assets/images/introduce/bg-4.png) center 0 / contain no-repeat;
+            
+            .app-logo{
+                width: 1.4rem;
+                height: 1.65rem;
+                margin: 0 auto 0.82rem;
+                overflow: hidden;
+
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .app-slogan{
+                font-size: 0.44rem;
+                color: #000;
+                line-height: 0.62rem;
+                text-align: center;
+                margin-bottom: 0.62rem;
+            }
+
+            .app-desc{
+                padding: 0 0.8rem;
+                font-size: 0.28rem;
+                color: #787878;
+                line-height: 0.4rem;
+                margin-bottom: 0.36rem;
+            }
+        }
+    }
+
+    .float-footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+
+        display: flex;
+        
+        width: 100%;
+        height: 1.0rem;
+        line-height: 1.0rem;
+        background-color: #fff;
+        box-shadow:0px 1px 13px 0px rgba(202,200,198,0.5);
+
+        .ff-lf{
+            flex: 1;
+            font-size: 0.28rem;
+            color: #333;
+            padding-left: 0.32rem;
+        }
+
+        .ff-rt{
+            width: 2.52rem;
+            background-image: linear-gradient(90deg, #FF8C00, #FF652B);
+            font-size: 0.32rem;
+            color: #fff;
+            text-align: center;
+        }
+    }
+
+    .bullet-screen{
+        position: fixed;
+        left: 0.32rem;
+        top: 0.6rem;
+        height: 0.54rem;
+        line-height: 0.56rem;
+        max-width: 4rem;
+        padding: 0 0.3rem;
+        border-radius: 0.06rem;
+        color: #fff;
+        font-size: 0.24rem;
+        text-align: center;
+        background-image: linear-gradient(90deg, #FF8C00 0, #FF5400 100% );
+        z-index: 2000;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        opacity: 0.7;
+    }
+
+    .bullet-enter-active{
+        opacity: 0.7;
+        transform: translate3d(0, 0, 0);
+        transition: all .5s ease-in-out;
+    }
+    .bullet-enter{
+        opacity: 0;
+        transform: translate3d(0, 150%, 0);
+    }
+
+    .bullet-leave-active {
+        transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    }
+
+    .bullet-leave-to{
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+
+</style>
